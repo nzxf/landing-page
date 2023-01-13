@@ -1,2 +1,1 @@
-# landing-page
-A landing page project for Odin Course
+Landing Page is one of the project from Odin Webdev Foundation Course
