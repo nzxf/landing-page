@@ -1,5 +1,5 @@
 body {
-    font-family: Tahoma, sans-serif;
+    font-family: roboto;
     background-color: #1f2937;
     justify-content: center;
     height: auto;
@@ -7,22 +7,19 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
-
 
 nav {
     display: flex;
     justify-content: space-between;
-    flex: 1;
     align-items: center;
-    padding: 0 5%;
-    width: 90%;
+    padding: 0 15%;
+    width: 70%;
 }
 
 nav>ul>li {
     display: inline-block;
-    padding: 5px;
+    padding: 0 1rem 0 0;
 }
 
 .header-logo,
@@ -31,47 +28,43 @@ nav>ul>li {
 .header3 {
     color: #f9faf8;
     text-decoration: none;
-    font-size: 12px;
 }
 
 .header-logo {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .hero {
     color: #f9faf8;
+    justify-content: space-evenly;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5%;
-    width: 90%;
-}
-
-.hero>img {
-    max-width: 50%;
+    flex-wrap: wrap;
+    padding: 5% 10%;
 }
 
 .hero>div {
     display: flex;
-    font-size: 1px;
     flex-direction: column;
     align-items: flex-start;
-    width: 45%;
-    font-size: 16px;
-    padding: 40px 0;
-
+    width: 100%;
+    font-size: 24px;
 }
 
 .hero>div>button>a {
     display: flex;
-    background-color: rgb(26, 155, 214);
+    background-color: #3882f6;
     color: white;
     border: 0;
     border-radius: 0.3rem;
     padding: 4.5px 25px;
     font-weight: bold;
     text-decoration: none;
+}
+
+.hero>div>button>a:hover {
+    background-color: #1dc7dd;
+    color: white);
 }
 
 main>.section1,
@@ -83,29 +76,31 @@ main>.section3 {
 
 main>.section2 {
     background-color: rgb(201, 201, 201);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 15%;
-    padding-right: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 50px 50px;
 }
 
 blockquote {
-    width: 95%;
     text-align: justify;
     font-style: italic;
-    font-size: 15px;
+    font-size: 18px;
+    width: 60%
 }
 
-.section2>p {
+.section2>div {
+    width: 60%;
     text-align: end;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
-    text-align: right;
 }
 
 .section1 {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 0 10%;
@@ -114,51 +109,57 @@ blockquote {
 
 .section1>div {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .section1>div>div {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 2%;
+    justify-content: flex-start;
+    padding: 0 5px;
 }
 
 .section1>div>div>img {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    max-height: 1000px;
-    justify-content: space-evenly;
+    border-radius: 0.5rem;
 }
 
 .section1>div>div>p {
-    display: flex;
     justify-content: center;
     font-size: 11px;
     text-align: center;
 }
 
+.section1>div>div>p>a {
+    color: black;
+    text-decoration: none;
+}
+
 .section3 {
-    padding: 0 5%;
-    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section3>div {
-    background-color: rgb(26, 155, 214);
-    padding: 30px 80px;
+    background-color: #3882f6;
+    padding: 40px 30px;
     border-radius: 0.4rem;
-    font-size: 12px;
+    font-size: 15px;
     color: white;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    width: 70%
 }
 
 .section3>div>button>a {
     display: flex;
-    background-color: rgb(26, 155, 214);
+    background-color: #3882f6;
     color: white;
     border: 1px solid white;
     border-radius: 0.3rem;
@@ -166,6 +167,12 @@ blockquote {
     font-weight: bold;
     text-decoration: none;
 }
+
+.section3>div>button>a:hover {
+    background-color: white;
+    color: #3882f6;
+}
+
 
 footer>p {
     color: white;
@@ -188,7 +195,7 @@ footer>p {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 44px;
 }
 
 .hero>div>button,
@@ -197,4 +204,13 @@ h1 {
     border: 0;
     margin: 0;
     border-radius: 0.3rem;
+}
+
+@media (min-width: 900px) {
+    .hero>div {
+        /* display: flex;
+            flex-direction: column;
+            align-items: flex-start; */
+        width: 50%;
+    }
 }
