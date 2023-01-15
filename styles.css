@@ -39,7 +39,8 @@ nav>ul>li {
     color: #f9faf8;
     display: flex;
     flex-wrap: wrap;
-    padding: 5% 15%;
+    padding: 2% 15% 5% 15%;
+
 }
 
 .hero>div {
@@ -215,7 +216,8 @@ h1 {
     }
 
     .header1,
-    .header2 {
+    .header2,
+    .header3 {
         display: none;
     }
 
